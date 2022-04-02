@@ -10408,6 +10408,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/twig@npm:^1":
+  version: 1.12.9
+  resolution: "@types/twig@npm:1.12.9"
+  checksum: 3e2659f987d277028eb0b99181a47e5624a83f49f6d73c4c23ea3d89e6b5394402473e4a73cb1e81ebd2fc9cbe2a5a3d389e7cfc99b45820caf4ee8a31e1f949
+  languageName: node
+  linkType: hard
+
 "@types/uglify-js@npm:*":
   version: 3.13.1
   resolution: "@types/uglify-js@npm:3.13.1"
@@ -13477,7 +13484,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async@npm:^2.4.1, async@npm:^2.6.2":
+"async@npm:^2.1.5, async@npm:^2.4.1, async@npm:^2.6.2":
   version: 2.6.3
   resolution: "async@npm:2.6.3"
   dependencies:
@@ -23017,6 +23024,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"foreachasync@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "foreachasync@npm:3.0.0"
+  checksum: 8ad877008da351fa78939e850c6014e94b8b9c6de3d12751b2b906ef96f8c80945310d998b2a704854e126c508237dc9951f6900685ccc42c93db15b09a0c4b3
+  languageName: node
+  linkType: hard
+
 "foreground-child@npm:^2.0.0":
   version: 2.0.0
   resolution: "foreground-child@npm:2.0.0"
@@ -24578,6 +24592,15 @@ __metadata:
     inherits: ^2.0.3
     minimalistic-assert: ^1.0.1
   checksum: 41ada59494eac5332cfc1ce6b7ebdd7b88a3864a6d6b08a3ea8ef261332ed60f37f10877e0c825aaa4bddebf164fbffa618286aeeec5296675e2671cbfa746c4
+  languageName: node
+  linkType: hard
+
+"hasha@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "hasha@npm:3.0.0"
+  dependencies:
+    is-stream: ^1.0.1
+  checksum: 6412d08e8bb165b0616a27dbe34476162af8469de3a0d75b02aa2f2f78634b92650fcc31c6dcf6d9b76df71323df8c37befb4c1e42a367f08fbd1f0c04ae5a26
   languageName: node
   linkType: hard
 
@@ -30083,6 +30106,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"locutus@npm:^2.0.11":
+  version: 2.0.16
+  resolution: "locutus@npm:2.0.16"
+  checksum: 46559f449e3624610272cb6061fe5b55bfb21323741238526a115026f31e5352e7cffe9c162e1eb727fbf22529953280a2a326ec0d55ae4aa482d294c9c1ad97
+  languageName: node
+  linkType: hard
+
 "lodash-es@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash-es@npm:4.17.21"
@@ -32133,6 +32163,15 @@ __metadata:
   dependencies:
     brace-expansion: ^1.1.7
   checksum: d0a2bcd93ebec08a9eef3ca83ba33c9fb6feb93932e0b4dc6aa46c5f37a9404bea7ad9ff7cafe23ce6634f1fe3b206f5315ecbb05812da6e692c21d8ecfd3dae
+  languageName: node
+  linkType: hard
+
+"minimatch@npm:3.0.x":
+  version: 3.0.8
+  resolution: "minimatch@npm:3.0.8"
+  dependencies:
+    brace-expansion: ^1.1.7
+  checksum: 72b226f452dcfb5075255f53534cb83fc25565b909e79b9be4fad463d735cb1084827f7013ff41d050e77ee6e474408c6073473edd2fb72c2fd630cfb0acc6ad
   languageName: node
   linkType: hard
 
@@ -40484,6 +40523,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"schema-utils@npm:^0.4.5":
+  version: 0.4.7
+  resolution: "schema-utils@npm:0.4.7"
+  dependencies:
+    ajv: ^6.1.0
+    ajv-keywords: ^3.1.0
+  checksum: 0de445cee6bf9a54b7b18b284b5f5ebe5b481f57e71854872c4215bd8eda73811a5f4964718c26f24b50f46a5eafbaf8a391459a7f10b78c242a798a3e0e24c8
+  languageName: node
+  linkType: hard
+
 "schema-utils@npm:^1.0.0":
   version: 1.0.0
   resolution: "schema-utils@npm:1.0.0"
@@ -44020,6 +44069,36 @@ __metadata:
   languageName: node
   linkType: hard
 
+"twig-loader@npm:^0.5.5":
+  version: 0.5.5
+  resolution: "twig-loader@npm:0.5.5"
+  dependencies:
+    async: ^2.1.5
+    hasha: ^3.0.0
+    loader-utils: ^1.1.0
+    schema-utils: ^0.4.5
+    twig: ^1.12.0
+    underscore: ^1.9.1
+  peerDependencies:
+    twig: ~1.10.5
+  checksum: d0a0331140694b34361e5bba82bc4a47c9311da198f567dd86daaa708c7ebc83629d8c954b9bc6fa50e61e7b837fe5644f5f94157eaa0396ecc03293f42dd6c7
+  languageName: node
+  linkType: hard
+
+"twig@npm:^1.12.0, twig@npm:^1.15.4":
+  version: 1.15.4
+  resolution: "twig@npm:1.15.4"
+  dependencies:
+    "@babel/runtime": ^7.8.4
+    locutus: ^2.0.11
+    minimatch: 3.0.x
+    walk: 2.3.x
+  bin:
+    twigjs: ./bin/twigjs
+  checksum: f11fb536d575c5b36f192138e34a9a6daea34568a215bfe04c58ecd25b07de7523a4a175499d94363523fc5d244cfea9ad8041e8aa58e86fe63de8cf7049fe54
+  languageName: node
+  linkType: hard
+
 "type-check@npm:^0.4.0, type-check@npm:~0.4.0":
   version: 0.4.0
   resolution: "type-check@npm:0.4.0"
@@ -44279,7 +44358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"underscore@npm:>=1.8.3":
+"underscore@npm:>=1.8.3, underscore@npm:^1.9.1":
   version: 1.13.2
   resolution: "underscore@npm:1.13.2"
   checksum: cfdbdfceaa927452244ea22027093bd5a7c4daa90c5bcc88ffcd1312424091bc1f0238d2c5dbd6693c4d255481d4c07a33ab70dd02c7eb65b9ae0ae7c2dfcfe8
@@ -45825,6 +45904,15 @@ __metadata:
     matcher-collection: ^2.0.0
     minimatch: ^3.0.4
   checksum: 45fe284ffa28440f0d3d0a136b3c3fe2a0f55bf207db22c481eea9e7ab7cef6d820491485d76e9f1af9dab7489c6d7a0efbd1ebf45b43dbf871f046f0b4760bd
+  languageName: node
+  linkType: hard
+
+"walk@npm:2.3.x":
+  version: 2.3.15
+  resolution: "walk@npm:2.3.15"
+  dependencies:
+    foreachasync: ^3.0.0
+  checksum: c390221ff6fdb8e95f9b03d90fa9980edc2c01ce9efac44c0ade2036ee2823bf2bc9abfae388bdf64ab59e9262610e7cf6634ad54acac018e62621b85edad2cf
   languageName: node
   linkType: hard
 
