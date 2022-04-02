@@ -14,7 +14,7 @@ expect.addSnapshotSerializer({
 const tick = () => new Promise((r) => setTimeout(r, 0));
 
 const makeContext = (name: string, parameters: any, args: any, extra?: object): StoryContext => ({
-  id: `html-test--${name}`,
+  id: `twig-test--${name}`,
   kind: 'js-text',
   name,
   parameters,
@@ -41,7 +41,7 @@ describe('sourceDecorator', () => {
     await tick();
     expect(mockChannel.emit).toHaveBeenCalledWith(
       SNIPPET_RENDERED,
-      'html-test--args',
+      'twig-test--args',
       '<div>args story</div>'
     );
   });
@@ -57,7 +57,7 @@ describe('sourceDecorator', () => {
     await tick();
     expect(mockChannel.emit).toHaveBeenCalledWith(
       SNIPPET_RENDERED,
-      'html-test--args',
+      'twig-test--args',
       ['<div>', '  args story', '</div>'].join('\n')
     );
   });
@@ -92,7 +92,7 @@ describe('sourceDecorator', () => {
     await tick();
     expect(mockChannel.emit).toHaveBeenCalledWith(
       SNIPPET_RENDERED,
-      'html-test--args',
+      'twig-test--args',
       '<div>args story</div>'
     );
   });
@@ -106,7 +106,7 @@ describe('sourceDecorator', () => {
     await tick();
     expect(mockChannel.emit).toHaveBeenCalledWith(
       SNIPPET_RENDERED,
-      'html-test--args',
+      'twig-test--args',
       '<p><div>args story</div></p>'
     );
   });

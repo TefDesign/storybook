@@ -3,9 +3,9 @@ import { SNIPPET_RENDERED, SourceType } from '@storybook/docs-tools';
 import { addons, useEffect } from '@storybook/addons';
 import type { ArgsStoryFn, PartialStoryFn, StoryContext } from '@storybook/csf';
 import dedent from 'ts-dedent';
-import type { HtmlFramework } from '..';
+import type { TwigFramework } from '..';
 
-function skipSourceRender(context: StoryContext<HtmlFramework>) {
+function skipSourceRender(context: StoryContext<TwigFramework>) {
   const sourceParams = context?.parameters.docs?.source;
   const isArgsStory = context?.parameters.__isArgsStory;
 
@@ -25,18 +25,18 @@ function defaultTransformSource(source: string) {
   return dedent(source);
 }
 
-function applyTransformSource(source: string, context: StoryContext<HtmlFramework>): string {
+function applyTransformSource(source: string, context: StoryContext<TwigFramework>): string {
   const docs = context.parameters.docs ?? {};
   const transformSource = docs.transformSource ?? defaultTransformSource;
   return transformSource(source, context);
 }
 
 export function sourceDecorator(
-  storyFn: PartialStoryFn<HtmlFramework>,
-  context: StoryContext<HtmlFramework>
+  storyFn: PartialStoryFn<TwigFramework>,
+  context: StoryContext<TwigFramework>
 ) {
   const story = context?.parameters.docs?.source?.excludeDecorators
-    ? (context.originalStoryFn as ArgsStoryFn<HtmlFramework>)(context.args, context)
+    ? (context.originalStoryFn as ArgsStoryFn<TwigFramework>)(context.args, context)
     : storyFn();
 
   let source: string;

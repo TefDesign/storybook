@@ -10,7 +10,7 @@ export const parameters = {
     prepareForInline,
     source: {
       type: SourceType.DYNAMIC,
-      language: 'html',
+      language: 'twig',
     },
   },
 };
