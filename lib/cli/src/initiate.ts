@@ -20,6 +20,7 @@ import mithrilGenerator from './generators/MITHRIL';
 import marionetteGenerator from './generators/MARIONETTE';
 import markoGenerator from './generators/MARKO';
 import htmlGenerator from './generators/HTML';
+import twigGenerator from './generators/TWIG';
 import webComponentsGenerator from './generators/WEB-COMPONENTS';
 import riotGenerator from './generators/RIOT';
 import preactGenerator from './generators/PREACT';
@@ -190,6 +191,11 @@ const installStorybook = (projectType: ProjectType, options: CommandOptions): Pr
       case ProjectType.HTML:
         return htmlGenerator(packageManager, npmOptions, generatorOptions)
           .then(commandLog('Adding Storybook support to your "HTML" app\n'))
+          .then(end);
+
+      case ProjectType.TWIG:
+        return twigGenerator(packageManager, npmOptions, generatorOptions)
+          .then(commandLog('Adding Storybook support to your "TWIG" app'))
           .then(end);
 
       case ProjectType.WEB_COMPONENTS:

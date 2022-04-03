@@ -205,6 +205,14 @@ export const html: Parameters = {
   autoDetect: false,
 };
 
+export const twig: Parameters = {
+  framework: 'twig',
+  name: 'twig',
+  version: 'latest',
+  generator: fromDeps(),
+  autoDetect: false,
+};
+
 export const preact: Parameters = {
   framework: 'preact',
   name: 'preact',

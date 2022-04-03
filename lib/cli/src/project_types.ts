@@ -28,6 +28,7 @@ export type SupportedFrameworks =
   | 'rax'
   | 'aurelia'
   | 'html'
+  | 'twig'
   | 'web-components'
   | 'server';
 
@@ -52,6 +53,7 @@ export enum ProjectType {
   MARIONETTE = 'MARIONETTE',
   MARKO = 'MARKO',
   HTML = 'HTML',
+  TWIG = 'TWIG',
   RIOT = 'RIOT',
   PREACT = 'PREACT',
   SVELTE = 'SVELTE',
