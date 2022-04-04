@@ -6,6 +6,7 @@ describe.each([
   ['angular'],
   ['ember'],
   ['html'],
+  ['twig'],
   ['preact'],
   ['react'],
   ['server'],
