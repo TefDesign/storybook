@@ -12,6 +12,7 @@ title: 'Install Storybook'
    'get-started/installation-command-section/preact.mdx',
    'get-started/installation-command-section/react.mdx',
    'get-started/installation-command-section/svelte.mdx',
+   'get-started/installation-command-section/twig.mdx',
    'get-started/installation-command-section/vue.mdx',
    'get-started/installation-command-section/web-components.mdx',
   ]}
@@ -81,6 +82,7 @@ Below are some of the most common installation issues and instructions on how to
    'get-started/installation-problems/preact.mdx',
    'get-started/installation-problems/react.mdx',
    'get-started/installation-problems/svelte.mdx',
+   'get-started/installation-problems/twig.mdx',
    'get-started/installation-problems/vue.mdx',
    'get-started/installation-problems/web-components.mdx',
   ]}

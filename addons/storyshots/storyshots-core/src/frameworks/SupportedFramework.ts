@@ -6,6 +6,7 @@ export type SupportedFramework =
   | 'riot'
   | 'react-native'
   | 'svelte'
+  | 'twig'
   | 'vue'
   | 'vue3'
   | 'web-components'

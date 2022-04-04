@@ -157,7 +157,7 @@ export function detectLanguage() {
   return language;
 }
 
-export function detect(options: { force?: boolean; html?: boolean } = {}) {
+export function detect(options: { force?: boolean; html?: boolean; twig?: boolean } = {}) {
   const packageJson = readPackageJson();
   const bowerJson = getBowerJson();
 
@@ -172,6 +172,10 @@ export function detect(options: { force?: boolean; html?: boolean } = {}) {
 
   if (options.html) {
     return ProjectType.HTML;
+  }
+
+  if (options.twig) {
+    return ProjectType.TWIG;
   }
 
   return detectFrameworkPreset(packageJson || bowerJson);

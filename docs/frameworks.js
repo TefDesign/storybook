@@ -1,6 +1,6 @@
 module.exports = {
   coreFrameworks: ['react', 'vue', 'angular', 'web-components'],
-  communityFrameworks: ['ember', 'html', 'svelte', 'preact'],
+  communityFrameworks: ['ember', 'html', 'svelte', 'preact', 'twig'],
   featureGroups: [
     {
       name: 'Essentials',
@@ -121,12 +121,21 @@ module.exports = {
         },
         {
           name: 'Dynamic source',
-          supported: ['react', 'vue', 'angular', 'svelte', 'web-components', 'html'],
+          supported: ['react', 'vue', 'angular', 'svelte', 'web-components', 'html', 'twig'],
           path: 'writing-docs/doc-blocks#source',
         },
         {
           name: 'Args Table',
-          supported: ['react', 'vue', 'angular', 'html', 'ember', 'web-components', 'svelte'],
+          supported: [
+            'react',
+            'vue',
+            'angular',
+            'html',
+            'ember',
+            'web-components',
+            'svelte',
+            'twig',
+          ],
           path: 'writing-docs/doc-blocks#argstable',
         },
         {
@@ -136,7 +145,7 @@ module.exports = {
         },
         {
           name: 'Inline stories',
-          supported: ['react', 'vue', 'web-components', 'html', 'svelte', 'angular'],
+          supported: ['react', 'vue', 'web-components', 'html', 'svelte', 'angular', 'twig'],
           path: 'writing-docs/doc-blocks#inline-rendering',
         },
       ],

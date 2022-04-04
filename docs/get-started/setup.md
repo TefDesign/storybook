@@ -25,6 +25,8 @@ Pick a simple component from your project, like a Button, and write a `.stories.
     'web-components/your-component.js.mdx',
     'html/your-component.js.mdx',
     'html/your-component.ts.mdx',
+    'twig/your-component.js.mdx',
+    'twig/your-component.ts.mdx',
     'preact/your-component.js.mdx',
   ]}
 />

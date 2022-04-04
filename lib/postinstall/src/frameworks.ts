@@ -16,6 +16,7 @@ const FRAMEWORKS = [
   'react-native',
   'riot',
   'svelte',
+  'twig',
   'vue',
   'web-components',
 ];

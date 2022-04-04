@@ -21,6 +21,7 @@ export const frameworks = [
   'preact',
   // "sfcVue",
   'svelte',
+  'twig',
 ];
 
 const logger = console;

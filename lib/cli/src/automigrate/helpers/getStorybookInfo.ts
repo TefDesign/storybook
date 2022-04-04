@@ -18,6 +18,7 @@ const viewLayers: Record<string, string> = {
   '@storybook/vue3': 'vue3',
   '@storybook/angular': 'angular',
   '@storybook/html': 'html',
+  '@storybook/twig': 'twig',
   '@storybook/web-components': 'web-components',
   '@storybook/polymer': 'polymer',
   '@storybook/ember': 'ember',
